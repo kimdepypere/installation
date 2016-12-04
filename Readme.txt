@@ -8,10 +8,12 @@
 Script content: 
 =================
 
-vimrc:
+Dotfiles:
 ------
 - install .vimrc
+- install .bashr
 - setup symbolic link to .vimrc
+- copy .bashrc to homedir
 
 Scripts: 
 --------

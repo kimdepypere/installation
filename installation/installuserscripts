@@ -29,10 +29,10 @@ echo "Host *github.com*" >> ~/.ssh/config
 echo "   ForwardX11 no" >> ~/.ssh/config
 
 echo "Linking files... ."
-ln -s ~/userscripts/vimrc/.vimrc ~/.vimrc
+ln -s ~/userscripts/dotfiles/.vimrc ~/.vimrc
 
 echo "Copying bashrc to local user."
-cp ~/userscripts/bashrc/.bashrc ~/.bashrc
+cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
 
 echo "Making scripts executable... ."
 chmod 700 -R ~/userscripts/execscripts
