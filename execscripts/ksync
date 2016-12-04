@@ -25,7 +25,7 @@ echo " "
 echo "Starting to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
 echo " "
-echo "\tAdded files:"
+echo "    Added files:"
 git diff --cached --name-only 2>&1 | sed 's/^/    /'
 echo " "
 
