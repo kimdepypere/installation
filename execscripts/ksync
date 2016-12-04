@@ -35,12 +35,12 @@ git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed '
 echo " "
 
 # Push to git
-echo "Pushing to github... ."
+echo "Starting push to github... ."
 git push 2>&1 | sed 's/^/    /' 
 echo " "
 
 # Pulling from git 
-echo "Pulling from githug... ."
+echo "Starting pull from github... ."
 git pull 2>&1 | sed 's/^/    /'
 echo " " 
 
