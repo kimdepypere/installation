@@ -72,7 +72,7 @@ Information:
 - networking            -  Network manager information 
 - systemd               -  Systemd information 
 
-extra:
+Extra:
 ------
 - empty                 -  Empty template to make new information sheets
 
