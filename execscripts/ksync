@@ -7,17 +7,30 @@
 ## Synchronize userscripts with github
 ##########################################################################
 
+# clear the screen 
 printf "\033c"
+
+# print banner
 echo "-------------------------------------------"
 echo "-- github syncscript - Made by KDP        -"
 echo "-------------------------------------------"
+
+# Enter userscripts directory
 echo "Starting sync... ."
 cd ~/userscripts
+
+# Add all altered files to the git commit
 echo "Starting to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
+
+# Commit the changes to git with a current timestamp to the commit message
 echo "Starting git commit."
 git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed 's/^/    /'
+
+# Push to git
 echo "Pushing to github."
 git push 2>&1 | sed 's/^/    /' 
+
+# Ending banner
 echo "Stopping script."
 echo "-------------------------------------------"
