@@ -25,7 +25,7 @@ echo " "
 echo "Starting to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
 echo "Added files:"
-git diff --cached --name-only -A 2>&1 | sed 's/^/    /'
+git diff --cached --name-only 2>&1 | sed 's/^/    /'
 echo " "
 
 # Commit the changes to git with a current timestamp to the commit message
