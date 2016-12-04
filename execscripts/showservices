@@ -2,7 +2,7 @@
 ## Author:  Kim Depypere
 ## Date:    04/12/2016
 ## Description:
-## installation script for new users
+## show all services in systemd
 ##########################################################################
 
 systemctl | grep service

@@ -4,7 +4,7 @@
 ## Author:  Kim Depypere
 ## Date:    04/12/2016
 ## Description:
-## installation script for new users
+## Synchronize userscripts with github
 ##########################################################################
 
 printf "\033c"
