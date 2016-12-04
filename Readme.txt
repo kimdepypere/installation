@@ -42,9 +42,9 @@ Notes
 ======
 Here I will keep some notes for future reference.  
 
-======
-Tree
-======
+====================
+Directory structure
+====================
 
 .
 |-- Readme.txt
