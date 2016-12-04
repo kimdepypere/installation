@@ -1,0 +1,12 @@
+#########################################################################################
+## Pacman information 
+#########################################################################################
+
+Commands
+===========
+
+- sudo pacman -Q                    :   Generate list of installed packages 
+- sudo pacman -Syy                  :   Force update repo's
+- sudo pacman -S <package>          :   Install <software> package
+- sudo pacman -Rc <package>         :   uninstall <package> and all depending packages
+- sudo pacman -Rdd <package>        :   uninstall only <package>

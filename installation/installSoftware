@@ -7,4 +7,10 @@
 ## Install personal directory-structure
 ##########################################################################
 
-sudo pacman -S tree
+sudo pacman -Syy 
+sudo pacman -S --noconfirm vim      # favourite text-editor
+sudo pacman -S --noconfirm tree     # for generating tree structures from directories
+sudo pacman -S --noconfirm pkgfile  # for searching packages
+sudo pkgfile --update
+sudo pacman -S --noconfirm wget
+
