@@ -28,5 +28,4 @@ Installation:
 -------------
 - installationscript for this (userscripts) repo
 
-testing this merge
 ##############################################################################
