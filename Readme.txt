@@ -41,7 +41,7 @@ WARNING: this is still an ongoing project.
 |       |-- ksyncGit
 |       `-- ksyncProfile
 |-- installation
-|   |-- installUserscripts
+|   |-- install
 |   `-- optional
 |       |-- installDirs
 |       `-- installSoftware
@@ -56,8 +56,7 @@ WARNING: this is still an ongoing project.
 == Installation 
 ==============================================================================
 
-Use the installation script (installUserscripts) within the 
-"installation"-folder. 
+Use the installation script (install) within the "installation"-folder. 
 
 
 ==============================================================================
