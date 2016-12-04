@@ -26,6 +26,7 @@
 `-- notes
     |-- empty.info
     |-- networking.info
+    |-- pacman.info
     `-- systemd.info
 
 
@@ -69,8 +70,9 @@ Here I will keep some notes for future reference.
 
 Information: 
 ------------
-- networking            -  Network manager information 
-- systemd               -  Systemd information 
+- networking            -   Network manager information 
+- pacman                -   pacman information
+- systemd               -   Systemd information 
 
 Extra:
 ------
