@@ -14,9 +14,9 @@ echo "-------------------------------------------"
 echo "Starting sync... ."
 cd ~/userscripts
 echo "Adding all adaptations to gitsync... ."
-git add -A | sed 's/^/    /'
+git add -A 
 echo "Starting git commit."
-git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." | i sed 's/^/    /'
+git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 
 echo "Pusching to github."
-git push | sed 's/^/    /' 
+git push 
 echo "-------------------------------------------"
