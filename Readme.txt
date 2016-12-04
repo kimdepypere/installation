@@ -7,6 +7,26 @@
 - Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
 - Startdate:        4 december 2016 
 
+====================
+Directory structure
+====================
+.
+|-- Readme.txt
+|-- dotfiles
+|-- execscripts
+|   |-- disableservice
+|   |-- ksync
+|   |-- pacupdate
+|   `-- showservices
+|-- installation
+|   |-- installDirs
+|   |-- installSoftware
+|   `-- installUserscripts
+`-- notes
+    |-- empty.info
+    |-- networking.info
+    `-- systemd.info
+
 =============
 Installation 
 =============
@@ -41,26 +61,5 @@ Installation:
 Notes 
 ======
 Here I will keep some notes for future reference.  
-
-====================
-Directory structure
-====================
-.
-|-- Readme.txt
-|-- dotfiles
-|-- execscripts
-|   |-- disableservice
-|   |-- ksync
-|   |-- pacupdate
-|   `-- showservices
-|-- installation
-|   |-- installDirs
-|   |-- installSoftware
-|   `-- installUserscripts
-`-- notes
-    |-- empty.info
-    |-- networking.info
-    `-- systemd.info
-
 
 ##############################################################################
