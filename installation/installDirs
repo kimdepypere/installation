@@ -1,0 +1,20 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    04/12/2016
+## Description:
+## Install personal directory-structure
+##########################################################################
+
+cd ~/Documents
+
+echo "Making projects folder"
+mkdir projects
+echo "Making go folder"
+mkdir projects/golang
+echo "Making ruby folder"
+mkdir projects/ruby
+echo "Making php folder"
+mkdir projects/php
+

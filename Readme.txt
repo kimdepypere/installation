@@ -42,4 +42,25 @@ Notes
 ======
 Here I will keep some notes for future reference.  
 
+======
+Tree
+======
+
+.
+|-- Readme.txt
+|-- dotfiles
+|-- execscripts
+|   |-- disableservice
+|   |-- ksync
+|   |-- pacupdate
+|   `-- showservices
+|-- installation
+|   |-- installDirs
+|   |-- installSoftware
+|   `-- installUserscripts
+`-- notes
+    |-- empty.info
+    |-- networking.info
+    `-- systemd.info
+
 ##############################################################################

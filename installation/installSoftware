@@ -1,0 +1,10 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    04/12/2016
+## Description:
+## Install personal directory-structure
+##########################################################################
+
+sudo pacman -S tree
