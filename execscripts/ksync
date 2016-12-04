@@ -39,5 +39,10 @@ echo "Pushing to github... ."
 git push 2>&1 | sed 's/^/    /' 
 echo " "
 
+# Pulling from git 
+echo "Pulling from githug... ."
+git pull 2>&1 | sed 's/^/    /'
+echo " " 
+
 # Ending banner
 echo "-------------End of script-----------------"
