@@ -17,7 +17,7 @@ echo "-------------------------------------------"
 echo " " 
 
 # Enter userscripts directory
-echo "Starting sync... ."
+echo "Starting script... ."
 cd ~/userscripts
 echo " "
 
@@ -45,4 +45,5 @@ git pull 2>&1 | sed 's/^/    /'
 echo " " 
 
 # Ending banner
+echo "Sync complete"
 echo "-------------End of script-----------------"
