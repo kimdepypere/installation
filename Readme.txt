@@ -24,4 +24,9 @@ Scripts:
     - pacupdate         -   Update the system via pacman (systemd)
     - showservices      -   Show all running services (systemd)
 
+Installation: 
+-------------
+- installationscript for this (userscripts) repo
+
+
 ##############################################################################
