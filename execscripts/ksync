@@ -32,5 +32,7 @@ echo "Pushing to github."
 git push 2>&1 | sed 's/^/    /' 
 
 # Ending banner
+echo " "
+echo " "
 echo "Stopping script."
 echo "-------------------------------------------"
