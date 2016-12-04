@@ -7,6 +7,10 @@
 ## Synchronize userscripts with github
 ##########################################################################
 
+echo "--------------------------------------------------------------------------------------"
+echo "-- Profile SyncScript - Made by KDP                                                  --"
+echo "--------------------------------------------------------------------------------------"
+
 # start copying files
 echo "Starting copying files."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
