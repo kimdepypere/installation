@@ -17,7 +17,7 @@ else
     echo "id_rsa.pub not found."
 fi
 
-echo "Syncing userscrips... ."
+echo "Syncing userscripts... ."
 cd ~/
 git clone https://github.com/kimdepypere/userscripts
 cd  ~/userscripts
