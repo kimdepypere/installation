@@ -12,5 +12,3 @@ git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`."
 echo "Pusching to github."
 git push 
 echo "-------------------------------------------"
-echo "-- end of script                         --" 
-echo "-------------------------------------------"
