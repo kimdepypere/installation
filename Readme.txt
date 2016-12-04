@@ -7,9 +7,10 @@
 - Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
 - Startdate:        4 december 2016 
 
-====================
-Directory structure
-====================
+
+==============================================================================
+== Directory structure
+==============================================================================
 .
 |-- Readme.txt
 |-- dotfiles
@@ -27,15 +28,17 @@ Directory structure
     |-- networking.info
     `-- systemd.info
 
-=============
+
+==============================================================================
 Installation 
-=============
+==============================================================================
 
 Use the installation script within the "installation"-folder. 
 
-===============
-Script content 
-===============
+
+==============================================================================
+== Script content 
+==============================================================================
 
 Dotfiles:
 ---------
@@ -55,11 +58,14 @@ Execscripts:
 
 Installation: 
 -------------
-    - installuserscripts    -   installation-script for this (userscripts) repo
+    - installuserscripts  -   installation-script for this (userscripts) repo
 
-======
+
+==============================================================================
 Notes 
-======
+==============================================================================
+
 Here I will keep some notes for future reference.  
+
 
 ##############################################################################
