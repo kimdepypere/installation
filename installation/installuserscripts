@@ -20,15 +20,17 @@ fi
 echo "Syncing userscrips... ."
 cd ~/
 git clone https://github.com/kimdepypere/userscripts
-cd  userscripts
+cd  ~/userscripts
 git remote set-url origin git@github.com:kimdepypere/userscripts.git
 cd ~/
 
 echo "Linking files... ."
 ln -s ~/userscripts/vimrc/.vimrc ~/.vimrc
 
-echo "Making scripts executable directory... ."
-echo "export PATH=$PATH:~/userscripts/execscripts" >> ~/.bashrc 
+echo "Copying bashrc to local user."
+cp ~/userscripts/bashrc/.bashrc ~/.bashrc
+
+echo "Making scripts executable... ."
 chmod 700 -R ~/userscripts/execscripts
 
 echo "Add the following key to github-keys:"
