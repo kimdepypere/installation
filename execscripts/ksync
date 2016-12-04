@@ -14,25 +14,29 @@ printf "\033c"
 echo "-------------------------------------------"
 echo "-- github syncscript - Made by KDP        -"
 echo "-------------------------------------------"
+echo " " 
 
 # Enter userscripts directory
 echo "Starting sync... ."
 cd ~/userscripts
+echo " "
 
 # Add all altered files to the git commit
 echo "Starting to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
+echo " "
 
 # Commit the changes to git with a current timestamp to the commit message
 echo "Starting git commit."
 git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed 's/^/    /'
+echo " "
 
 # Push to git
 echo "Pushing to github."
 git push 2>&1 | sed 's/^/    /' 
+echo " "
 
 # Ending banner
-echo " "
 echo " "
 echo "Stopping script."
 echo "-------------------------------------------"
