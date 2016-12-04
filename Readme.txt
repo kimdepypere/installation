@@ -67,5 +67,9 @@ Installation:
 
 Here I will keep some notes for future reference.  
 
+- empty                 -  Empty template to make new information sheets
+- networking            -  Network manager information 
+- systemd               -  Systemd information 
+
 
 ##############################################################################
