@@ -9,6 +9,24 @@
 
 
 ==============================================================================
+== Description
+==============================================================================
+
+These userscripts are a way of implementing a user structure within a
+ARCH linux environment. Use in other distro's will normally also work. 
+
+These scripts can make your user directories more organised than before. 
+It is really one way of seting up a workable environment on a newly 
+installed linux system. 
+
+The goal is to provide some scripts that can be used when trying a new
+installation of a linux distro, without having to remake every directory
+or modification to your homedir dotfiles manually. 
+
+
+WARNING: this is still an ongoing project. 
+
+==============================================================================
 == Directory structure
 ==============================================================================
 .
