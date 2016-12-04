@@ -55,7 +55,8 @@ WARNING: this is still an ongoing project.
 == Installation 
 ==============================================================================
 
-Use the installation script within the "installation"-folder. 
+Use the installation script (installUserscripts) within the 
+"installation"-folder. 
 
 
 ==============================================================================
