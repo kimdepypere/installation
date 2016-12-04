@@ -41,9 +41,10 @@ WARNING: this is still an ongoing project.
 |       |-- ksyncGit
 |       `-- ksyncProfile
 |-- installation
-|   |-- installDirs
-|   |-- installSoftware
-|   `-- installUserscripts
+|   |-- installUserscripts
+|   `-- optional
+|       |-- installDirs
+|       `-- installSoftware
 `-- notes
     |-- empty.info
     |-- networking.info
