@@ -9,3 +9,4 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/userscripts/execscripts
+export PATH=$PATH:~/userscripts/execscripts/sync

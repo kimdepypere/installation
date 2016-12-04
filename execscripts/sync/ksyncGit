@@ -1,0 +1,50 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    04/12/2016
+## Description:
+## Synchronize userscripts with github
+##########################################################################
+
+# clear the screen 
+printf "\033c"
+
+# print banner
+echo "--------------------------------------------------------------------------------------"
+echo "-- Github SyncScript - Made by KDP                                                  --"
+echo "--------------------------------------------------------------------------------------"
+echo " " 
+
+# Enter userscripts directory
+echo "Starting script... ."
+cd ~/userscripts
+echo " "
+
+# Add all altered files to the git commit
+echo "Starting to add adaptations to gitsync... ."
+git add -A 2>&1 | sed 's/^/    /' 
+echo " "
+echo "  Added files:"
+git diff --cached --name-only 2>&1 | sed 's/^/    /'
+echo " "
+
+# Commit the changes to git with a current timestamp to the commit message
+echo "Starting git commit... ."
+git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed 's/^/    /'
+echo " "
+
+# Push to git
+echo "Starting push to github... ."
+git push 2>&1 | sed 's/^/    /' 
+echo " "
+
+# Pulling from git 
+echo "Starting pull from github... ."
+git pull 2>&1 | sed 's/^/    /'
+echo " " 
+
+# Ending banner
+echo "Sync done."
+echo "End of script."
+echo "--------------------------------------------------------------------------------------"
