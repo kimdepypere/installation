@@ -12,7 +12,7 @@ echo "-- Profile SyncScript "
 echo "--------------------------------------------------------------------------------------"
 echo " " 
 echo "Starting copying files."
-echo "copy: .bashrc"
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
+echo "copied: .bashrc"
 echo " "
 echo "--------------------------------------------------------------------------------------"
