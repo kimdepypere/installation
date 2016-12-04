@@ -7,22 +7,27 @@
 - Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
 - Startdate:        4 december 2016 
 
-Script content: 
-=================
+=============
+Installation 
+=============
+
+Use the installation script within the "installation"-folder. 
+
+===============
+Script content 
+===============
 
 Dotfiles:
-------
+---------
 - install .vimrc
 - install .bashr
 - setup symbolic link to .vimrc
 - copy .bashrc to homedir
 
-Scripts: 
---------
-- install basic scripts
-- add basic scripts execution to .bashrc
+Execscripts: 
+------------
+- install execscripts (install to execute without any './')
 
-    basicscripts: 
     - syncscripts       -   syncing git scripts to my repo (github)
     - disableservice    -   disable a systemd service (systemd)
     - pacupdate         -   Update the system via pacman (systemd)
@@ -30,11 +35,11 @@ Scripts:
 
 Installation: 
 -------------
-- installationscript for this (userscripts) repo
+    - installuserscripts    -   installation-script for this (userscripts) repo
 
-
-Notes: 
-------
-Here I will keep some notes to remember some commands. 
+======
+Notes 
+======
+Here I will keep some notes for future reference.  
 
 ##############################################################################
