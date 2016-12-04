@@ -2,8 +2,10 @@
 ## Userscripts                                                              ## 
 ##############################################################################
 
-- Author:         Kim Depypere 
-- OS platform:    Arch 
+- Author:           Kim Depypere 
+- OS platform:      Arch Linux 
+- Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
+- Startdate:        4 december 2016 
 
 Script content: 
 =================
@@ -30,5 +32,9 @@ Installation:
 -------------
 - installationscript for this (userscripts) repo
 
-2nd test merge
+
+Notes: 
+------
+Here I will keep some notes to remember some commands. 
+
 ##############################################################################
