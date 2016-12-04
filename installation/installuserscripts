@@ -1,0 +1,39 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    04/12/2016
+## Description:
+## installation script for new users 
+##########################################################################
+
+# === add SSH keys information ==
+# echo "Making ssh key's"
+# ssh-keygen -t rsa -b 4096 -C "kim.depypere@gmail.com"
+
+if [ ! -f ~/.ssh/id_rsa.pub ]; then
+    echo "id_rsa.pub found."
+else 
+    echo "id_rsa.pub not found."
+fi
+
+echo "Syncing dotfiles... ."
+cd ~/
+git clone https://github.com/kimdepypere/userscripts
+cd  userscripts
+git remote set-url origin git@github.com:kimdepypere/userscripts.git
+cd ~/
+
+echo "Linking files... ."
+ln -s ~/userscripts/vimrc/.vimrc ~/.vimrc
+
+echo "Making scripts executable directory... ."
+echo "export PATH=$PATH:~/userscripts/execscripts" >> ~/.bashrc 
+chmod 700 -R ~/userscripts/execscripts
+
+echo "Add the following key to github:"
+echo "-----------------------------------"
+cat ~/.ssh/id_rsa.pub
+echo "-----------------------------------"
+echo " "
+echo "End of script."
