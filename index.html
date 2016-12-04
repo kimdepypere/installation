@@ -1,30 +1,51 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Userscripts by kimdepypere</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Userscripts</h1>
-      <h2 class="project-tagline">bash userscripts automatic installation</h2>
-      <a href="https://github.com/kimdepypere/userscripts" class="btn">View on GitHub</a>
-      <a href="https://github.com/kimdepypere/userscripts/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/kimdepypere/userscripts/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/kimdepypere/userscripts">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/kimdepypere/userscripts/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/kimdepypere/userscripts/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <section class="main-content">
-      <h6></h6>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Userscripts</h1>
+          <p>bash userscripts automatic installation</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/kimdepypere">kimdepypere</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="userscripts" class="anchor" href="#userscripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Userscripts</h1>
 
 <h2>
-<a id="userscripts--------------------------------------------------------------" class="anchor" href="#userscripts--------------------------------------------------------------" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Userscripts                                                              ##</h2>
+<a id="general" class="anchor" href="#general" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h2>
 
-<h6></h6>
+<h3>
+<a id="information" class="anchor" href="#information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Information:</h3>
 
 <ul>
 <li>Author:           Kim Depypere </li>
@@ -33,20 +54,16 @@
 <li>Startdate:        4 december 2016 </li>
 </ul>
 
-<h1></h1>
-
-<h1>
-<a id="installation-" class="anchor" href="#installation-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation </h1>
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <p>Use the installation script within the "installation"-folder. </p>
 
-<h1></h1>
-
-<h1>
-<a id="script-content-" class="anchor" href="#script-content-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Script content </h1>
-
 <h2>
-<a id="dotfiles" class="anchor" href="#dotfiles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dotfiles:</h2>
+<a id="scripts" class="anchor" href="#scripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scripts</h2>
+
+<h3>
+<a id="dotfiles" class="anchor" href="#dotfiles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dotfiles:</h3>
 
 <ul>
 <li>install .vimrc</li>
@@ -55,12 +72,10 @@
 <li>copy .bashrc to homedir</li>
 </ul>
 
-<h2>
-<a id="execscripts-" class="anchor" href="#execscripts-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Execscripts: </h2>
+<h3>
+<a id="execscripts" class="anchor" href="#execscripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Execscripts:</h3>
 
-<ul>
-<li>
-<p>install execscripts (install to execute without any './')</p>
+<p>Execscripts (installed to execute without any './'):</p>
 
 <ul>
 <li>syncscripts       -   syncing git scripts to my repo (github)</li>
@@ -68,32 +83,22 @@
 <li>pacupdate         -   Update the system via pacman (systemd)</li>
 <li>showservices      -   Show all running services (systemd)</li>
 </ul>
-</li>
+
+<h3>
+<a id="installation-1" class="anchor" href="#installation-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation:</h3>
+
+<ul>
+<li>installuserscripts    -   installation-script for this (userscripts) repo</li>
 </ul>
 
 <h2>
-<a id="installation--1" class="anchor" href="#installation--1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation: </h2>
-
-<pre><code>- installuserscripts    -   installation-script for this (userscripts) repo
-</code></pre>
-
-<h1></h1>
-
-<h1>
-<a id="notes-" class="anchor" href="#notes-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes </h1>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h2>
 
 <p>Here I will keep some notes for future reference.  </p>
+      </section>
 
-<h6></h6>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/kimdepypere/userscripts">Userscripts</a> is maintained by <a href="https://github.com/kimdepypere">kimdepypere</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
