@@ -17,7 +17,7 @@ else
     echo "id_rsa.pub not found."
 fi
 
-echo "Syncing dotfiles... ."
+echo "Syncing userscrips... ."
 cd ~/
 git clone https://github.com/kimdepypere/userscripts
 cd  userscripts
@@ -31,7 +31,7 @@ echo "Making scripts executable directory... ."
 echo "export PATH=$PATH:~/userscripts/execscripts" >> ~/.bashrc 
 chmod 700 -R ~/userscripts/execscripts
 
-echo "Add the following key to github:"
+echo "Add the following key to github-keys:"
 echo "-----------------------------------"
 cat ~/.ssh/id_rsa.pub
 echo "-----------------------------------"
