@@ -37,5 +37,4 @@ git push 2>&1 | sed 's/^/    /'
 echo " "
 
 # Ending banner
-echo "EOS"
-echo "-------------------------------------------"
+echo "-------------End of script-----------------"
