@@ -13,10 +13,10 @@ echo "-- github syncscript - Made by KDP        -"
 echo "-------------------------------------------"
 echo "Starting sync... ."
 cd ~/userscripts
-echo "Adding all adaptations to gitsync... ."
+echo "Starging to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
 echo "Starting git commit."
 git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed 's/^/    /'
-echo "Pusching to github."
+echo "Pushing to github."
 git push 2>&1 | sed 's/^/    /' 
 echo "-------------------------------------------"
