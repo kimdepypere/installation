@@ -27,16 +27,16 @@ git add -A 2>&1 | sed 's/^/    /'
 echo " "
 
 # Commit the changes to git with a current timestamp to the commit message
-echo "Starting git commit."
+echo "Starting git commit... ."
 git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`." 2>&1 | sed 's/^/    /'
 echo " "
 
 # Push to git
-echo "Pushing to github."
+echo "Pushing to github... ."
 git push 2>&1 | sed 's/^/    /' 
 echo " "
 
 # Ending banner
 echo " "
-echo "Stopping script."
+echo "-= Stopping script =-"
 echo "-------------------------------------------"
