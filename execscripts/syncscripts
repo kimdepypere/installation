@@ -1,15 +1,16 @@
 #!/bin/bash
+printf "\033c"
 echo "-------------------------------------------"
 echo "-- Made by KDP"
 echo "-------------------------------------------"
 echo "Starting sync... ."
 cd ~/userscripts
 echo "Adding all adaptations to gitsync... ."
-git add -A >> /tmp/syncscript.log
+git add -A 
 echo "Starting git commit."
 git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`."
 echo "Pusching to github."
-git push >> /tmp/syncscript.log
+git push 
 echo "-------------------------------------------"
 echo "-- end of script                         --" 
 echo "-------------------------------------------"
