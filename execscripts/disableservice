@@ -1,2 +1,9 @@
+##########################################################################
+## Author:  Kim Depypere
+## Date:    04/12/2016
+## Description:
+## installation script for new users
+##########################################################################
+
 sudo systemctl stop $1
 sudo systemctl disable $1
