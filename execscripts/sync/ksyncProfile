@@ -7,15 +7,6 @@
 ## Synchronize userscripts with github
 ##########################################################################
 
-# clear the screen
-printf "\033c"
-
-# Start ksync script
-echo "Starting ksync script."
-echo " "
-ksync
-echo " "
-
 # start copying files
 echo "Starting copying files."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc

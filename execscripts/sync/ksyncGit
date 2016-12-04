@@ -7,9 +7,6 @@
 ## Synchronize userscripts with github
 ##########################################################################
 
-# clear the screen 
-printf "\033c"
-
 # print banner
 echo "--------------------------------------------------------------------------------------"
 echo "-- Github SyncScript - Made by KDP                                                  --"
