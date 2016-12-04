@@ -24,7 +24,8 @@ echo " "
 # Add all altered files to the git commit
 echo "Starting to add adaptations to gitsync... ."
 git add -A 2>&1 | sed 's/^/    /' 
-echo "Added files:"
+echo " "
+echo "\tAdded files:"
 git diff --cached --name-only 2>&1 | sed 's/^/    /'
 echo " "
 
