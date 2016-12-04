@@ -15,8 +15,8 @@ echo "--------------------------------------------------------------------------
 echo " " 
 echo "Starting syncGit"
 echo " "
-ksyncGit
+source ksyncGit
 echo "Starting ksyncProfile"
-ksyncProfile
+source ksyncProfile
 echo " " 
 echo "--------------------------------------------------------------------------------------"
