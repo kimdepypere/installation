@@ -28,4 +28,5 @@ Installation:
 -------------
 - installationscript for this (userscripts) repo
 
+-- 2nd test merging
 ##############################################################################
