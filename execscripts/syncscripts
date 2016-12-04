@@ -3,6 +3,8 @@
 echo "Starting sync... ."
 echo "-------------------------------------------"
 cd ~/userscripts
+git add -A
+git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'`."
 git push 
 echo "-------------------------------------------"
 echo "-- end of script                         --" 
