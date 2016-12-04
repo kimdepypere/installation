@@ -13,6 +13,6 @@ echo "--------------------------------------------------------------------------
 echo " " 
 echo "Starting copying files."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
-echo "copied: .bashrc"
+echo " - copied: .bashrc"
 echo " "
 echo "--------------------------------------------------------------------------------------"
