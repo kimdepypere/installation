@@ -16,9 +16,12 @@
 |-- dotfiles
 |-- execscripts
 |   |-- disableservice
-|   |-- ksync
 |   |-- pacupdate
-|   `-- showservices
+|   |-- showservices
+|   `-- sync
+|       |-- ksync
+|       |-- ksyncGit
+|       `-- ksyncProfile
 |-- installation
 |   |-- installDirs
 |   |-- installSoftware
@@ -52,7 +55,7 @@ Execscripts:
 ------------
 - install execscripts (install to execute without any './')
 
-    - syncscripts       -   syncing git scripts to my repo (github)
+    - ksync             -   syncing git scripts and updating profile syncs 
     - disableservice    -   disable a systemd service (systemd)
     - pacupdate         -   Update the system via pacman (systemd)
     - showservices      -   Show all running services (systemd)
