@@ -11,7 +11,7 @@
 # echo "Making ssh key's"
 # ssh-keygen -t rsa -b 4096 -C "kim.depypere@gmail.com"
 
-if [ ! -f ~/.ssh/id_rsa.pub ]; then
+if [ -f "~/.ssh/id_rsa.pub" ]; then
     echo "id_rsa.pub found."
 else 
     echo "id_rsa.pub not found."
