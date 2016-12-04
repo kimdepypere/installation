@@ -45,7 +45,6 @@ Here I will keep some notes for future reference.
 ====================
 Directory structure
 ====================
-
 .
 |-- Readme.txt
 |-- dotfiles
@@ -62,5 +61,6 @@ Directory structure
     |-- empty.info
     |-- networking.info
     `-- systemd.info
+
 
 ##############################################################################
