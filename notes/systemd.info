@@ -5,5 +5,6 @@
 Commands
 ===========
 
-- pstree        :   Show a tree of all processes.
-
+- pstree                        :   Show a tree of all processes.
+- systemctl | grep service      :   Show all services 
+- hostnamectl                   :   Show machine hostname / other info
