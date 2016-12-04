@@ -12,7 +12,7 @@ printf "\033c"
 
 # print banner
 echo "-------------------------------------------"
-echo "-- github syncscript - Made by KDP       --"
+echo "-- Github SyncScript - Made by KDP       --"
 echo "-------------------------------------------"
 echo " " 
 
