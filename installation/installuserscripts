@@ -24,6 +24,10 @@ cd  ~/userscripts
 git remote set-url origin git@github.com:kimdepypere/userscripts.git
 cd ~/
 
+echo "Patching config-file for x11-forwarding problems with github."
+echo "Host *github.com*" >> ~/.ssh/config 
+echo "   ForwardX11 no" >> ~/.ssh/config
+
 echo "Linking files... ."
 ln -s ~/userscripts/vimrc/.vimrc ~/.vimrc
 
