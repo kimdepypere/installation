@@ -9,7 +9,7 @@
 
 # === add SSH keys information ==
 # echo "Making ssh key's"
-# ssh-keygen -t rsa -b 4096 -C "kim.depypere@gmail.com"
+# ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
 if [ -f "~/.ssh/id_rsa.pub" ]; then
     echo "id_rsa.pub found."
