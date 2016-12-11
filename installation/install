@@ -11,11 +11,11 @@
 # echo "Making ssh key's"
 # ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
-if [ -f "~/.ssh/id_rsa.pub" ]; then
-    echo "id_rsa.pub found."
-else 
-    echo "id_rsa.pub not found."
-fi
+#if [ -f "~/.ssh/id_rsa.pub" ]; then
+#    echo "id_rsa.pub found."
+#else 
+#    echo "id_rsa.pub not found."
+#fi
 
 echo "Syncing userscripts... ."
 cd ~/
