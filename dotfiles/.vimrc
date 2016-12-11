@@ -90,3 +90,14 @@ set omnifunc=syntaxcomplete#Complete
  
 " Generate todolist"
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
+
+" Mouse support 
+set mouse=a
+
+" Highlight cursor line
+set CursorLine
+
+" Autocompletion mode + behave like bash autocomplete
+set wildmode=longest:full
+set wildmenu
+
