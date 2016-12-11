@@ -29,6 +29,7 @@ echo "Host *github.com*" >> ~/.ssh/config
 echo "   ForwardX11 no" >> ~/.ssh/config
 
 echo "Linking files... ."
+rm ~/.vimrc
 ln -s ~/userscripts/dotfiles/.vimrc ~/.vimrc
 
 echo "Copying bashrc to local user."
