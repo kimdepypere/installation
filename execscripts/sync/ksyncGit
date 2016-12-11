@@ -28,7 +28,7 @@ echo " "
 
 # Commit the changes to git with a current timestamp to the commit message
 echo "Starting git commit... ."
-git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'` from `$HOSTNAME`." 2>&1 | sed 's/^/    /'
+git commit -m "Syncscript executed on `date +'%Y-%m-%d %H:%M:%S'` from $HOSTNAME." 2>&1 | sed 's/^/    /'
 echo " "
 
 # Push to git
