@@ -1,7 +1,9 @@
 "learning purposes, disable arrow keys
+"Assign other uses for arrows
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
+" Use Texplore as a fileexplorer
 map <right> :Texplore<CR>
 imap <up> <nop>
 imap <down> <nop>
@@ -93,9 +95,6 @@ command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 
 " Mouse support 
 set mouse=a
-
-" Highlight cursor line
-set CursorLine
 
 " Autocompletion mode + behave like bash autocomplete
 set wildmode=longest:full
