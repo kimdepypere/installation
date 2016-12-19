@@ -29,6 +29,7 @@ WARNING: this is still an ongoing project.
 ==============================================================================
 == Directory structure
 ==============================================================================
+
 .
 |-- Readme.txt
 |-- Updates.log
@@ -54,8 +55,10 @@ WARNING: this is still an ongoing project.
     |   |-- pacman.info
     |   `-- systemd.info
     |-- empty.info
-    `-- golang
-        `-- links.info
+    |-- golang
+    |   `-- links.info
+    `-- vim
+        `-- shortcuts.info
 
 ==============================================================================
 == Installation 
