@@ -15,7 +15,8 @@ echo " "
 
 # Enter userscripts directory
 echo "Starting script... ."
-cd ~/userscripts
+#cd ~/userscripts
+cd $1 
 echo " "
 
 # Add all altered files to the git commit

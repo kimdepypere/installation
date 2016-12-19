@@ -13,7 +13,7 @@ echo "==========================================================================
 echo "== KSyncScript - Made by KDP                                                        =="
 echo "======================================================================================"
 echo " " 
-source ksyncGit
+source ksyncGit ~/userscripts
 echo " " 
 source ksyncProfile
 echo " " 
