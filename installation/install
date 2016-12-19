@@ -24,6 +24,14 @@ cd  ~/userscripts
 git remote set-url origin git@github.com:kimdepypere/userscripts.git
 cd ~/
 
+#Adding a local executescript which will not be synced with github.
+cd ~/userscripts/execscripts
+mkdir local
+cd ~/userscripts
+echo "execscripts/local" > .gitignore
+cd ~/
+
+
 echo "Patching config-file for x11-forwarding problems with github."
 echo "Host *github.com*" >> ~/.ssh/config 
 echo "   ForwardX11 no" >> ~/.ssh/config
