@@ -29,4 +29,9 @@ echo "Making ruby folder"
 mkdir ~/Documents/projects/ruby
 echo "Making php folder"
 mkdir ~/Documents/projects/php
+echo "Making python folder"
+mkdir ~/Documents/projects/python
+
+echo "Making published folder"
+mkdir ~/Documents/projects/published
 
