@@ -7,14 +7,15 @@
 ## Install personal directory-structure
 ##########################################################################
 
-cd ~/Documents
-
+cd ~/
+echo "Making documents folder"
+mkdir ~/Documents
 echo "Making projects folder"
-mkdir projects
+mkdir ~/Documents/projects
 echo "Making go folder"
-mkdir projects/golang
+mkdir ~/Documents/projects/golang
 echo "Making ruby folder"
-mkdir projects/ruby
+mkdir ~/Documents/projects/ruby
 echo "Making php folder"
-mkdir projects/php
+mkdir ~/Documents/projects/php
 
