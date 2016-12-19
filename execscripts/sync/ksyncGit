@@ -13,9 +13,7 @@
 #echo "--------------------------------------------------------------------------------------"
 #echo " " 
 
-# Enter userscripts directory
-echo "Starting script... ."
-#cd ~/userscripts
+# specific banner
 cd $1 
 echo " "
 echo "Syncing repo $1"
