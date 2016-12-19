@@ -44,6 +44,5 @@ git pull 2>&1 | sed 's/^/    /'
 echo " " 
 
 # Ending banner
-echo "Sync done."
-echo "End of script."
+echo "~~ sync done. ~~"
 #echo "--------------------------------------------------------------------------------------"
