@@ -14,6 +14,17 @@ echo "Making projects folder"
 mkdir ~/Documents/projects
 echo "Making go folder"
 mkdir ~/Documents/projects/golang
+cd ~/Documents/projects/golang
+mkdir {src,pkg,bin}
+cd src
+mkdir github.com
+cd github.com
+mkdir kimdepypere
+cd kimdepypere
+git clone https://github.com/kimdepypere/golangProjects
+cd golangProjects
+git remote set-url origin git@github.com:kimdepypere/golangProjects.git
+cd ~/
 echo "Making ruby folder"
 mkdir ~/Documents/projects/ruby
 echo "Making php folder"
