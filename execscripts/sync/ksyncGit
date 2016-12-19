@@ -19,6 +19,8 @@ echo "Starting script... ."
 cd $1 
 echo " "
 echo "Syncing repo $1"
+echo " "
+echo " "
 
 # Add all altered files to the git commit
 echo "Starting to add adaptations to gitsync... ."
