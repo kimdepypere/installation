@@ -13,8 +13,11 @@ echo "==========================================================================
 echo "== KSyncScript - Made by KDP                                                        =="
 echo "======================================================================================"
 echo " " 
+echo "--------------------------------------------------------------------------------------"
 source ksyncGit ~/userscripts
+echo "--------------------------------------------------------------------------------------"
 source ksyncGit ~/Documents/projects/golang/src/github.com/kimdepypere/golangProjects
+echo "--------------------------------------------------------------------------------------"
 echo " " 
 #Disabled bashrc synchro for safety purposes.
 # source ksyncProfile
