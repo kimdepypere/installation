@@ -21,7 +21,7 @@ echo " "
 echo " "
 
 # Add all altered files to the git commit
-echo "Adding new files (if any)... ."
+echo "Adding new/moderated files (if any) to the commit."
 git add -A 2>&1 | sed 's/^/    /' 
 echo " "
 echo "  Added files:"
