@@ -14,6 +14,7 @@ echo "== KSyncScript - Made by KDP                                              
 echo "======================================================================================"
 echo " " 
 source ksyncGit ~/userscripts
+source ksyncGit ~/Documents/projects/golang/src/kimdepypere/golangScripts
 echo " " 
 source ksyncProfile
 echo " " 
