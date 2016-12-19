@@ -1,0 +1,12 @@
+#########################################################################################
+## VIM Most used shortcuts 
+#########################################################################################
+
+Shortcuts
+===========
+
+- ctrl + v              :   Enter visual mode (selecting will select the chars)
+- shift + v             :   Enter visual mode (selecting will select the whole line)
+- dd                    :   Delete a whole line
+- yy                    :   Copy a whole line
+- p                     :   Paste 
