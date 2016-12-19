@@ -16,6 +16,7 @@ echo " "
 source ksyncGit ~/userscripts
 source ksyncGit ~/Documents/projects/golang/src/github.com/kimdepypere/golangProjects
 echo " " 
-source ksyncProfile
+#Disabled bashrc synchro for safety purposes.
+# source ksyncProfile
 echo " " 
 echo "======================================================================================"
