@@ -15,9 +15,9 @@
 
 # specific banner
 cd $1 
-echo " "
+echo "******"
 echo "Syncing repo $1"
-echo " "
+echo "******"
 echo " "
 
 # Add all altered files to the git commit
