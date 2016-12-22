@@ -90,7 +90,7 @@ Note:
 - to use vim-go, execute the following in vim: ":GoInstallBinaries"
 
 ==============================================================================
-== Script content 
+== Script content (outdated: update coming soon)
 ==============================================================================
 
 Dotfiles:
