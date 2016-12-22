@@ -1,0 +1,12 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    22/12/2016
+## Description:
+## Load vimrc for golang
+##########################################################################
+
+echo "Loading vimrc for Golang."
+cp ~/userscripts/dotfiles/vimrcGolang ~/.vimrc
+echo "Done."

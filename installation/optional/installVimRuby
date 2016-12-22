@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    22/12/2016
+## Description:
+## Install a GoLang specific vimrc  
+##########################################################################
+
+cd ~/
+mkdir .vim
+mkdir .vim/bundle
+cd .vim/bundle
+cp ~/userscripts/dotfiles/vimrcRuby ~/.vimrc
+

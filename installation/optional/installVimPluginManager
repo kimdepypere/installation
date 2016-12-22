@@ -1,0 +1,16 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    22/12/2016
+## Description:
+## Install a GoLang specific vimrc  
+##########################################################################
+
+cd ~/
+mkdir .vim
+
+#install plugins
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim 
+

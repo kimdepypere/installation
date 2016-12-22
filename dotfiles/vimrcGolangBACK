@@ -9,10 +9,10 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-
-" Use plugin manager pathogen
-execute pathogen#infect()
  
+" Load Pathogen plugin manager
+execute pathogen#infect()
+
 " Open everything in tabs by default
 :tab all
  
@@ -23,7 +23,14 @@ set wrap
 syntax on
 
 " Colorscheme
-colorscheme molokai
+set t_Co=256
+colorscheme molokai 
+
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
  
 " Search highlighting
 set hlsearch
@@ -37,7 +44,6 @@ set clipboard=unnamed
 set showmode
  
 " Indentation additions
-filetype indent plugin on
 set modeline
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4
  
@@ -67,12 +73,34 @@ set mouse=a
 set wildmode=longest:full
 set wildmenu
 
-" Golang Plugins
-"set runtimepath^=~/.vim/bundle/vim-go
-"let g:neocomplete#enable_at_startup = 1
+"---------------------- GOLANG Specific -------------------------
 
-" Run GoLang
-map <F5> :!go %<CR>
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent plugin on
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:go_disable_autoinstall = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 " Automatic reloading of vimrc
 autocmd! bufwritepost .vimrc source %

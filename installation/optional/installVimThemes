@@ -1,0 +1,37 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    22/12/2016
+## Description:
+## Install a GoLang specific vimrc  
+##########################################################################
+
+cd ~/
+mkdir .vim
+
+#remove old bundles 
+rm -r -f .vim/bundle 
+mkdir .vim/bundle
+
+#install custom colors (molokai theme)
+cd ~/.vim 
+mkdir colors
+cd ~/.vim/bundle
+
+# Favourite themes github download
+git clone https://github.com/Shougo/neocomplete.vim.git
+git clone git://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/NLKNguyen/papercolor-theme
+git clone https://github.com/ciaranm/inkpot
+
+mv molokai/colors/molokai.vim ~/.vim/colors
+mv vim-colors-solarized/colors/solarized.vim ~/.vim/colors
+mv papercolor-theme/colors/PaperColor.vim ~/.vim/colors
+mv inkpot/colors/inkpot.vim ~/.vim/colors
+
+# Cleanup
+rm -r -f molokai
+rm -r -f vim-colors-solarized
+rm -r -f papercolor-theme
+rm -r -f inkpot

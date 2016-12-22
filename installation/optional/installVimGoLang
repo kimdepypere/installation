@@ -1,0 +1,21 @@
+#!/bin/bash
+
+##########################################################################
+## Author:  Kim Depypere
+## Date:    22/12/2016
+## Description:
+## Install a GoLang specific vimrc  
+##########################################################################
+
+# Install plugins (with pathogen)
+echo "Fetching vim-go plugin."
+git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+
+# Load vimrc for golang
+echo "Copying golang vimrc."
+cp ~/userscripts/dotfiles/vimrcGolang ~/.vimrc
+
+echo "Use the following command in vim to finalize:"
+echo " "
+echo ':GoInstallBinaries'
+

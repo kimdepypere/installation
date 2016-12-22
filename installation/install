@@ -2,7 +2,7 @@
 
 ##########################################################################
 ## Author:  Kim Depypere
-## Date:    04/12/2016
+## Date:    22/12/2016
 ## Description:
 ## installation script for new users 
 ##########################################################################
@@ -30,7 +30,16 @@ echo "   ForwardX11 no" >> ~/.ssh/config
 
 echo "Linking files... ."
 rm ~/.vimrc
-ln -s ~/userscripts/dotfiles/.vimrc ~/.vimrc
+#ln -s ~/userscripts/dotfiles/.vimrc ~/.vimrc
+echo "Using empty vimrc."
+cp ~/userscripts/dotfiles/vimrcEmpty ~/.vimrc
+
+echo "Installing vim plugin manager pathogen."
+source optional/installVimPluginManager
+echo "Installing vim plugins"
+source optional/installVimPathoginPlugins
+echo "Installing vim themes"
+source optional/installVimThemes
 
 echo "Copying bashrc to local user."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
