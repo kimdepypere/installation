@@ -1,0 +1,28 @@
+#########################################################################################
+## VIM Most used shortcuts 
+#########################################################################################
+
+Shortcuts
+===========
+
+Modes
+-----
+- i                     :   Enter inser mode
+- ctrl + v              :   Enter visual mode (selecting will select the chars)
+- shift + v             :   Enter visual mode (selecting will select the whole line)
+
+Navigate
+--------
+- <number>G             :   Goto linenumber: <number>
+
+Deletes
+-------
+- dd                    :   Delete a whole line
+- dw                    :   Delete a word
+- d$                    :   Delete until end of line (from cursor)
+- <number>d             :   Delete <number> rows from cursor
+
+Copy paste
+----------
+- yy                    :   Copy a whole line
+- p                     :   Paste 

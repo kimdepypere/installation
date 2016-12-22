@@ -29,11 +29,15 @@ WARNING: this is still an ongoing project.
 ==============================================================================
 == Directory structure
 ==============================================================================
+
 .
 |-- Readme.txt
+|-- Updates.log
 |-- dotfiles
+|   `-- arch
 |-- execscripts
 |   |-- disableservice
+|   |-- local
 |   |-- pacupdate
 |   |-- showservices
 |   `-- sync
@@ -46,11 +50,15 @@ WARNING: this is still an ongoing project.
 |       |-- installDirs
 |       `-- installSoftware
 `-- notes
+    |-- Arch
+    |   |-- networking.info
+    |   |-- pacman.info
+    |   `-- systemd.info
     |-- empty.info
-    |-- networking.info
-    |-- pacman.info
-    `-- systemd.info
-
+    |-- golang
+    |   `-- links.info
+    `-- vim
+        `-- shortcuts.info
 
 ==============================================================================
 == Installation 

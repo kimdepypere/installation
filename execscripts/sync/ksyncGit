@@ -8,19 +8,20 @@
 ##########################################################################
 
 # print banner
-echo "--------------------------------------------------------------------------------------"
-echo "-- Github SyncScript" 
-echo "--------------------------------------------------------------------------------------"
-echo " " 
+#echo "--------------------------------------------------------------------------------------"
+#echo "-- Github SyncScript" 
+#echo "--------------------------------------------------------------------------------------"
+#echo " " 
 
-# Enter userscripts directory
-echo "Starting script... ."
-#cd ~/userscripts
+# specific banner
 cd $1 
+echo "******"
+echo "Syncing repo $1"
+echo "******"
 echo " "
 
 # Add all altered files to the git commit
-echo "Starting to add adaptations to gitsync... ."
+echo "Adding new/moderated files (if any) to the commit."
 git add -A 2>&1 | sed 's/^/    /' 
 echo " "
 echo "  Added files:"
@@ -43,6 +44,7 @@ git pull 2>&1 | sed 's/^/    /'
 echo " " 
 
 # Ending banner
-echo "Sync done."
-echo "End of script."
-echo "--------------------------------------------------------------------------------------"
+echo "******"
+echo " sync done. "
+echo "******"
+#echo "--------------------------------------------------------------------------------------"
