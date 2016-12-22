@@ -4,7 +4,9 @@
 
 - Author:           Kim Depypere 
 - OS platform:      Arch Linux 
-- Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
+                    Raspbian 
+- Linux kernel:     Linux 4.8.11-1-ARCH (December 2016) 
+                    Linux raspberrypi 3.18.10v7
 - Startdate:        22 december 2016 
 
 
@@ -39,11 +41,8 @@ WARNING: this is still an ongoing project.
 ├── BACKUP
 ├── dotfiles
 │   ├── arch
-│   ├── vimrcEmpty
-│   ├── vimrcGolang
-│   ├── vimrcGolangBACK
-│   ├── vimrcRuby
-│   └── vimrcRubyBACK
+│   ├── bash
+│   └── vim
 ├── execscripts
 │   ├── disableservice
 │   ├── local
@@ -57,7 +56,7 @@ WARNING: this is still an ongoing project.
 │       └── vimgo
 ├── installation
 │   ├── install
-│   └── optional
+│   └── installscripts
 │       ├── installDirs
 │       ├── installSoftware
 │       ├── installVimGoLang
@@ -74,11 +73,12 @@ WARNING: this is still an ongoing project.
 │   ├── golang
 │   │   └── links.info
 │   └── vim
+│       ├── plugin.info
 │       └── shortcuts.info
 ├── Readme.txt
 └── Updates.log
 
-13 directories, 28 files
+15 directories, 24 files
 
 ==============================================================================
 == Installation 
