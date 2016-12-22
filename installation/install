@@ -41,13 +41,16 @@ rm ~/.vimrc
 echo "Copying files... ."
 echo " - Using empty vimrc."
 cp ~/userscripts/dotfiles/vimrcEmpty ~/.vimrc
+
 echo "Installing vim specifics."
 echo " - Installing vim plugin manager pathogen."
-source optional/installVimPluginManager
+source ~/userscripts/installation/optional/installVimPluginManager
+wait
 echo " - Installing vim plugins"
-source optional/installVimPathoginPlugins
+source ~/userscripts/installation/optional/installVimPathogenPlugins
+wait
 echo " - Installing vim themes"
-source optional/installVimThemes
+source ~/userscripts/installation/optional/installVimThemes
 
 echo "Copying .bashrc to local user."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
