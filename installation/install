@@ -36,20 +36,20 @@ echo "Patching config-file for x11-forwarding problems with github."
 echo "Host *github.com*" >> ~/.ssh/config 
 echo "   ForwardX11 no" >> ~/.ssh/config
 
-echo "Linking files... ."
+echo "Removing existing files."
 rm ~/.vimrc
-#ln -s ~/userscripts/dotfiles/.vimrc ~/.vimrc
-echo "Using empty vimrc."
+echo "Copying files... ."
+echo " - Using empty vimrc."
 cp ~/userscripts/dotfiles/vimrcEmpty ~/.vimrc
-
-echo "Installing vim plugin manager pathogen."
+echo "Installing vim specifics."
+echo " - Installing vim plugin manager pathogen."
 source optional/installVimPluginManager
-echo "Installing vim plugins"
+echo " - Installing vim plugins"
 source optional/installVimPathoginPlugins
-echo "Installing vim themes"
+echo " - Installing vim themes"
 source optional/installVimThemes
 
-echo "Copying bashrc to local user."
+echo "Copying .bashrc to local user."
 cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
 
 echo "Making scripts executable... ."
