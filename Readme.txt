@@ -5,8 +5,14 @@
 - Author:           Kim Depypere 
 - OS platform:      Arch Linux 
 - Linux kernel:     Linux 4.8.11-1-ARCH (December 2016)
-- Startdate:        4 december 2016 
+- Startdate:        22 december 2016 
 
+
+==============================================================================
+== Known bugs
+==============================================================================
+
+- plugins aren't installed correctly via github
 
 ==============================================================================
 == Description
