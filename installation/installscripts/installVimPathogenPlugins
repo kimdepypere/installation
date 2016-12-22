@@ -16,4 +16,5 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic  
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline 
 git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter 
+git clone git://github.com/tpope/vim-dispatch.git ~/.vim/bunde/vim-dispatch
 echo "-------------------------------------------------------"

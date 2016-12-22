@@ -7,9 +7,10 @@
 ## installation script for new users 
 ##########################################################################
 
-# === add SSH keys information ==
-# echo "Making ssh key's"
-# ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
+#======= INFO(start)
+
+#echo "Making ssh key's"
+#ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 
 #if [ -f "~/.ssh/id_rsa.pub" ]; then
 #    echo "id_rsa.pub found."
@@ -17,6 +18,9 @@
 #    echo "id_rsa.pub not found."
 #fi
 
+#======= INFO(end) 
+
+#======= Sync
 echo "Syncing userscripts... ."
 cd ~/
 git clone https://github.com/kimdepypere/userscripts
@@ -24,40 +28,61 @@ cd  ~/userscripts
 git remote set-url origin git@github.com:kimdepypere/userscripts.git
 cd ~/
 
-#Adding a local executescript which will not be synced with github.
+#======= Make a local executescript directory (non-sync with gibhug)
+echo 'Making a local executable directory (~/userscripts/execscripts/local)'
 cd ~/userscripts/execscripts
 mkdir local
 cd ~/userscripts
+echo "Exlcuding local executable directory from github sync."
 echo "execscripts/local" > .gitignore
 cd ~/
 
-
+#======= Patch config-file
 echo "Patching config-file for x11-forwarding problems with github."
 echo "Host *github.com*" >> ~/.ssh/config 
 echo "   ForwardX11 no" >> ~/.ssh/config
 
+#======= Remove existing files
 echo "Removing existing files."
 rm ~/.vimrc
-echo "Copying files... ."
-echo " - Using empty vimrc."
-cp ~/userscripts/dotfiles/vimrcEmpty ~/.vimrc
 
-echo "Installing vim specifics."
+#======= Remove existing directories
+echo "Removing .vim directory."
+rm -rf ~/.vim
+
+#======= Adding new directories
+echo "Adding new .vim directory."
+mkdir ~/.vim
+
+#======= Adding bashrc files
+echo "Adding bashrc-files." 
+cp ~/userscripts/dotfiles/bash/.bashrc ~/.bashrc
+
+#======= Adding vimrc files
+echo "Adding vimrc-files."
+cp ~/userscripts/dotfiles/vim/.vimrc ~/.vimrc
+cp -R ~/userscripts/dotfiles/vim/.vim ~/.vim
+
+#======= Installing vim dependencies
+echo "Installing vim dependencies."
+
 echo " - Installing vim plugin manager pathogen."
-source ~/userscripts/installation/optional/installVimPluginManager
+source ~/userscripts/installation/installscripts/installVimPluginManager
 wait
+
 echo " - Installing vim plugins"
-source ~/userscripts/installation/optional/installVimPathogenPlugins
+source ~/userscripts/installation/installscripts/installVimPathogenPlugins
 wait
+
 echo " - Installing vim themes"
-source ~/userscripts/installation/optional/installVimThemes
+source ~/userscripts/installation/installscripts/installVimThemes
+wait
 
-echo "Copying .bashrc to local user."
-cp ~/userscripts/dotfiles/.bashrc ~/.bashrc
-
+#======= Installing executable scripts 
 echo "Making scripts executable... ."
 chmod 700 -R ~/userscripts/execscripts
 
+#======= Display extra information
 echo "Add the following key to github-keys:"
 echo "-----------------------------------"
 cat ~/.ssh/id_rsa.pub

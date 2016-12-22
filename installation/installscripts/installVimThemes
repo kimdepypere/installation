@@ -7,16 +7,8 @@
 ## Install a GoLang specific vimrc  
 ##########################################################################
 
-cd ~/
-mkdir .vim
-
-#remove old bundles 
-rm -r -f .vim/bundle 
-mkdir .vim/bundle
-
 #install custom colors (molokai theme)
-cd ~/.vim 
-mkdir colors
+mkdir ~/.vim/colors
 cd ~/.vim/bundle
 
 # Favourite themes github download
