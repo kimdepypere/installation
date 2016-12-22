@@ -29,36 +29,50 @@ WARNING: this is still an ongoing project.
 ==============================================================================
 == Directory structure
 ==============================================================================
-
 .
-|-- Readme.txt
-|-- Updates.log
-|-- dotfiles
-|   `-- arch
-|-- execscripts
-|   |-- disableservice
-|   |-- local
-|   |-- pacupdate
-|   |-- showservices
-|   `-- sync
-|       |-- ksync
-|       |-- ksyncGit
-|       `-- ksyncProfile
-|-- installation
-|   |-- install
-|   `-- optional
-|       |-- installDirs
-|       `-- installSoftware
-`-- notes
-    |-- Arch
-    |   |-- networking.info
-    |   |-- pacman.info
-    |   `-- systemd.info
-    |-- empty.info
-    |-- golang
-    |   `-- links.info
-    `-- vim
-        `-- shortcuts.info
+├── BACKUP
+├── dotfiles
+│   ├── arch
+│   ├── vimrcEmpty
+│   ├── vimrcGolang
+│   ├── vimrcGolangBACK
+│   ├── vimrcRuby
+│   └── vimrcRubyBACK
+├── execscripts
+│   ├── disableservice
+│   ├── local
+│   ├── pacupdate
+│   ├── showservices
+│   ├── sync
+│   │   ├── ksync
+│   │   ├── ksyncGit
+│   │   └── ksyncProfile
+│   └── vimswitch
+│       └── vimgo
+├── installation
+│   ├── install
+│   └── optional
+│       ├── installDirs
+│       ├── installSoftware
+│       ├── installVimGoLang
+│       ├── installVimPathogenPlugins
+│       ├── installVimPluginManager
+│       ├── installVimRuby
+│       └── installVimThemes
+├── notes
+│   ├── Arch
+│   │   ├── networking.info
+│   │   ├── pacman.info
+│   │   └── systemd.info
+│   ├── empty.info
+│   ├── golang
+│   │   └── links.info
+│   └── vim
+│       └── shortcuts.info
+├── Readme.txt
+└── Updates.log
+
+13 directories, 28 files
 
 ==============================================================================
 == Installation 
@@ -66,6 +80,8 @@ WARNING: this is still an ongoing project.
 
 Use the installation script (install) within the "installation"-folder. 
 
+Note: 
+- to use vim-go, execute the following in vim: ":GoInstallBinaries"
 
 ==============================================================================
 == Script content 
